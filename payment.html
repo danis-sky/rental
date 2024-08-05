@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>
+<body>
+    <nav class="sticky">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt=""></a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">DEALER LIST</a></li>
+            <li><a href="">CONTACT US</a></li>            
+        </ul>
+        <div class="login">
+            <a href="">Login Now</a>
+        </div>
+    </nav>
+    <section id="payment">
+        <h1 class="pay mt">Payment Details</h1>
+
+        <form action="">
+            <div class="form">
+                <div class="col">
+                    <label for="">Masukkan Nama Kamu</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="">Masukkan Nomor Telpon Kamu</label>
+                    <input type="number" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="">Masukkan Email Kamu</label>
+                    <input type="email" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="">Masukkan Alamat Kamu</label>
+                    <input type="text" placeholder="">            
+                </div>
+    
+                <div class="col">
+                    <label for="date">Masukkan Tanggal Mulai Sewa Kamu</label>
+                    <select name="jenis" class="select" id="jenis" required>
+                        <option disabled value="">Silahkan Pilih</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Automatic">Automatic</option>                                      
+                    </select>
+                </div>
+                
+                <div class="col">
+                    <label for="date">Masukkan Tanggal Akhir Sewa Kamu</label>
+                    <input type="date" placeholder="Masukkan Tanggal Akhir Sewa Kamu">
+                </div>
+                
+                <div class="col">
+                    <label for="">Masukkan Jam Sewa Kamu</label>
+                    <input type="time" placeholder="">
+                </div>   
+            </div>
+            
+            <div class="harga">
+                <input type="text" value="Rp 200.000">
+            </div>
+            <div class="button">
+                <input type="submit" value="Booking Now">
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
